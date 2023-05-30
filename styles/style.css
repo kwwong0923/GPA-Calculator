@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Mono", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  background-color: #272727;
+  color: white;
+}
+body header nav {
+  box-shadow: 0px 8px 6px -6px black;
+}
+body header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+body header nav ul li {
+  padding: 1rem;
+}
+body header nav ul li a {
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+}
+body main {
+  text-align: center;
+}
+body main h1 {
+  padding: 1rem;
+}
+body main section.main-part {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+body main section.main-part section.left {
+  flex: 1 1 500px;
+  margin-left: 15%;
+}
+body main section.main-part section.left div.all-form {
+  padding: 1rem;
+}
+body main section.main-part section.left div.all-form form {
+  padding: 0.3rem;
+}
+body main section.main-part section.left div.all-form form div.course-info input,
+body main section.main-part section.left div.all-form form div.course-info select {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border: 0.25px solid rgb(39, 39, 39);
+  border-radius: 0.25rem;
+}
+body main section.main-part section.left div.all-form form div.course-info input.course-credit {
+  width: 10%;
+}
+body main section.main-part section.left div.all-form form div.course-info button {
+  border: none;
+  cursor: pointer;
+  background-color: #272727;
+}
+body main section.main-part section.left div.all-form form div.course-info button i {
+  font-size: 1.25rem;
+  color: white;
+  pointer-events: none;
+}
+body main section.main-part section.left button.plus-btn {
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #272727;
+  color: White;
+}
+body main section.main-part section.right {
+  flex: 1 1 200px;
+  align-items: center;
+}
+body main section.main-part section.right div.result {
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  border-radius: 50%;
+  animation-name: border-color;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+body main section.main-part section.right div.result p {
+  margin-top: 50px;
+}
+
+.remove {
+  transform: scale(0);
+  transition: all 0.5s ease-in;
+}
+
+.add {
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+@keyframes border-color {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: limegreen;
+  }
+  66% {
+    border-color: aqua;
+  }
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 1265px) {
+  section.main-part {
+    display: flex;
+    flex-direction: column;
+  }
+  div.course-info {
+    display: flex;
+    flex-direction: column;
+  }
+  section.right {
+    margin-left: 30%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
