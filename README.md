@@ -11,5 +11,5 @@ HTML | CSS | SASS | Java Script
 * Enter the courses infomation and it will calcalates the result automatically
 
 ## Contact Me
-Feel free to contact me, if you are interest to chat with me  
+Feel free to contact me if you are interested in chatting with me.  
 [Telegram](https://t.me/kwwonggggg)
