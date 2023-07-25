@@ -10,3 +10,6 @@ HTML | CSS | SASS | Java Script
 * [Link](https://kwgpacalculator.netlify.app/)
 * Enter the courses infomation and it will calcalates the result automatically
 
+## Contact Me
+Feel free to contact me, if you are interest to chat with me  
+[Telegram](https://t.me/kwwonggggg)
